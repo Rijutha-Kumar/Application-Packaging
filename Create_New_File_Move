@@ -1,0 +1,5 @@
+Option Explicit
+Dim FSO
+Set FSO=CreateObject("Scripting.FileSystemObject")
+FSO.CreateTextFile "Sample.doc"
+FSO.MoveFile "Sample.doc", "C:\Users\Riju\Desktop\Final\"
