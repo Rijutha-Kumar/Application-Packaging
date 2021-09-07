@@ -7,3 +7,10 @@ Var2 = InputBox("What path to copy to")
 Set FSO=CreateObject("Scripting.FileSystemObject")
 FSO.CreateFolder("C:\Users\Riju\Desktop\Rijutha")
 FSO.COPYFOLDER Var1,Var2
+
+
+Option Explicit
+Dim FSO
+Set FSO=CreateObject("Scripting.FileSystemObject")
+FSO.CreateFolder("C:\Users\Riju\Desktop\Rijutha")
+FSO.COPYFOLDER "C:\Users\Riju\Desktop\Riju", "C:\Users\Riju\Desktop\Rijutha"
