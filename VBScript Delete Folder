@@ -1,0 +1,5 @@
+
+Option Explicit
+Dim FSO
+Set FSO=CreateObject("Scripting.FileSystemObject")
+FSO.DeleteFolder("C:\Users\Riju\Desktop\Rijutha")
