@@ -1,0 +1,5 @@
+Option Explicit
+Dim FSO
+Set FSO=CreateObject("Scripting.FileSystemObject")
+FSO.MoveFolder "C:\Users\Riju\Desktop\Riju", "C:\Users\Riju\Desktop\Rijutha\"    
+FSO.MoveFolder "C:\Users\Riju\Desktop\Rijutha", "C:\Users\Riju\Desktop\Final"

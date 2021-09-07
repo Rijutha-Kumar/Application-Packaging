@@ -1,4 +1,0 @@
-Option Explicit
-Dim FSO
-Set FSO=CreateObject("Scripting.FileSystemObject")
-FSO.MoveFolder "C:\Users\Riju\Desktop\Riju", "C:\Users\Riju\Desktop\Rijutha\"
