@@ -1,0 +1,14 @@
+Dim SourceLocation 
+Dim DestinationLocation 
+Dim cmdline,objFSO
+Dim strSysDrive
+
+Dim WshShell: Set WshShell = CreateObject("WScript.Shell")
+SET objFSO = CREATEOBJECT("Scripting.FileSystemObject")
+strSysDrive = WshShell.ExpandEnvironmentStrings("%SystemDrive%")
+
+SourceLocation = strSysDrive & "\Test"
+DestinationLocation = "C:\Users\Riju\Desktop\Sample\"
+
+
+objFSO.CopyFolder SourceLocation , DestinationLocation
