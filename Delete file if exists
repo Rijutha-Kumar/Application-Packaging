@@ -1,0 +1,14 @@
+On Error Resume Next
+Dim objFSO,StrD,oShell
+Set objFSO = CreateObject("Scripting.FileSystemObject")
+
+Set oShell = CreateObject("WScript.Shell")
+StrD = oShell.ExpandEnvironmentStrings("%programfiles(x86)%") & "\7-Zip\Dummy.txt"
+
+If objFSO.FileExists (StrD) Then
+   objFSO.DeleteFile StrD,0
+End If
+
+
+Set objFSO = Nothing
+Set oShell = Nothing
