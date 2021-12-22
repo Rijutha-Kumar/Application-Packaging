@@ -1,0 +1,7 @@
+On Error Resume Next
+
+Set wshShell = Wscript.CreateObject("WScript.Shell")
+SysDrive = wshShell.ExpandEnvironmentStrings("%Systemdrive%")
+Set filesys = CreateObject("Scripting.FileSystemObject") 
+ 
+filesys.CreateFolder SysDrive & "\Program Files (x86)\7-Zip\Test" 
