@@ -1,0 +1,19 @@
+On Error Resume Next
+
+Dim SourceLocation 
+Dim DestinationLocation 
+Dim cmdline,objFSO
+Dim strSysDrive, strD
+
+Dim WshShell: Set WshShell = CreateObject("WScript.Shell")
+SET objFSO = CREATEOBJECT("Scripting.FileSystemObject")
+
+strD = WshShell.ExpandEnvironmentStrings("%ProgramFiles(x86)%")
+strSysDrive = WshShell.ExpandEnvironmentStrings("%SystemDrive%")
+objFSO.CreateFolder strSysDrive & "\Test" 
+
+SourceLocation = strSysDrive & "\Test"
+DestinationLocation = strD & "\7-Zip\"
+
+
+objFSO.CopyFolder SourceLocation , DestinationLocation
